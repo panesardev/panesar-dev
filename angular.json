@@ -33,15 +33,15 @@
                 "input": "src/public"
               }
             ],
-            "styles": [
-              "src/styles/index.scss"
-            ],
+            "styles": ["src/styles/index.scss"],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "allowedCommonJsDependencies": ["*"],
+            "namedChunks": true
           },
           "configurations": {
             "production": {
