@@ -1,0 +1,14 @@
+@layer components {
+  a {
+    @apply text-primary;
+  }
+
+  button {
+    @apply bg-white/15 hover:bg-white/20 text-secondary font-bold uppercase text-sm tracking-wide flex justify-center items-center gap-4 px-8 py-3 transition-colors;
+  }
+
+  button.primary {
+    @apply bg-primary hover:bg-primary/90 text-base-2;
+  }
+  
+}

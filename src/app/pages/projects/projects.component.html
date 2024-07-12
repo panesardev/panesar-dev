@@ -1,0 +1,50 @@
+<section class="mt-10">
+
+  <h1 class="text-primary text-center text-5xl md:text-7xl mb-10 md:mb-16">Introducing {{ blog.name }}</h1>
+
+  <div class="grid md:grid-cols-[2fr_2fr] max-w-5xl gap-8 md:gap-16 mx-auto md:mt-10 mb-28 px-4 md:px-0">
+    <div>
+      <p class="text-lg md:text-xl mb-8">{{ blog.description }}</p>
+      <div class="flex flex-wrap gap-6 mb-8">
+        @for (item of blog.stack; track $index) {
+          <span class="bg-primary/15 text-primary capitalize px-4 py-2 rounded-full">{{ item }}</span>
+        }
+      </div>
+      <a [href]="blog.link" target="_blank">
+        <button class="primary">
+          <span>visit blog</span>
+          <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+        </button>
+      </a>
+    </div>
+
+    <div class="bg-secondary h-fit p-4">
+      <a [href]="blog.link" target="_blank">
+        <img [src]="blog.images[0]" [alt]="blog.name">
+      </a>
+    </div>
+  </div>
+
+  <h1 class="text-primary text-center text-5xl md:text-7xl mb-10 md:mb-16">Projects</h1>
+
+  <div class="max-w-5xl grid grid-cols-2 gap-6 md:gap-12 mx-auto">
+    @for (project of projects; track $index) {
+      <div class="bg-white/5 grid gap-6 md:gap-8">
+        <div>
+          <img [src]="project.images[0]" [alt]="project.name">
+        </div>
+        <div class="px-6 pb-6 md:px-8 md:pb-6">
+          <h1 class="text-primary text-3xl md:text-3xl mb-2">{{ project.name }}</h1>
+          <p class="mb-6">{{ project.description }}</p>
+          <a [href]="project.link" target="_blank">
+            <button class="primary">
+              <span>visit</span>
+              <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+
+</section>
