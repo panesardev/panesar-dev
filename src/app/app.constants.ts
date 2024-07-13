@@ -1,4 +1,4 @@
-import { Project } from "./types/project.interface";
+import { Project } from "./types/project";
 
 export const FEATURED_ARTICLE_URL = 'https://plutonium-api.vercel.app/articles/featured';
 
@@ -7,7 +7,7 @@ export const LINKS = {
   x: 'https://x.com/panesardev',
   instagram: 'https://instagram.com/panesar.dev',
   youtube: '',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/sukhpreet-singh-18102000/',
 };
 
 export const BLOG: Project = {
@@ -15,7 +15,7 @@ export const BLOG: Project = {
   description: 'Introducing a server-rendered blog platform I developed with Angular to help fellow developers learn coding techniques quickly.',
   link: 'https://plutoniumx.vercel.app',
   stack: ['angular', 'firebase', 'tailwind', 'markdown'],
-  images: ['/assets/img/plutonium.png'],
+  images: ['/img/plutonium.png'],
 };
 
 export const PROJECTS: Project[] = [
@@ -25,9 +25,9 @@ export const PROJECTS: Project[] = [
     link: 'https://eshopstyle.vercel.app',
     stack: ['angular', 'firebase', 'tailwind'],
     images: [
-      '/assets/img/eshopstyle1.png',
-      '/assets/img/eshopstyle2.png',
-      '/assets/img/eshopstyle3.png',
+      '/img/eshopstyle1.png',
+      '/img/eshopstyle2.png',
+      '/img/eshopstyle3.png',
     ],
   },
   {
@@ -36,9 +36,9 @@ export const PROJECTS: Project[] = [
     link: 'https://ngx-kanban.vercel.app',
     stack: ['angular', 'firebase', 'tailwind'],
     images: [
-      '/assets/img/kanban1.png',
-      '/assets/img/kanban2.png',
-      '/assets/img/kanban3.png',
+      '/img/kanban1.png',
+      '/img/kanban2.png',
+      '/img/kanban3.png',
     ],
   },
 ];

@@ -10,7 +10,7 @@ import { NavbarComponent } from './layout/navbar.component';
     NavbarComponent,
   ],
   template: `
-    <main class="grid gap-8 p-6 md:p-8">
+    <main class="grid gap-8 px-6 pt-8 pb-20 md:px-8 md:pt-8">
       <app-navbar/>
       <div>
         <router-outlet/>

@@ -1,5 +1,4 @@
-<section class="mt-10">
-
+<section class="mt-8">
   <h1 class="text-primary text-center text-5xl md:text-7xl mb-10 md:mb-16">Introducing {{ blog.name }}</h1>
 
   <div class="grid md:grid-cols-[2fr_2fr] max-w-5xl gap-8 md:gap-16 mx-auto md:mt-10 mb-28 px-4 md:px-0">
@@ -20,7 +19,7 @@
 
     <div class="bg-secondary h-fit p-4">
       <a [href]="blog.link" target="_blank">
-        <img [src]="blog.images[0]" [alt]="blog.name">
+        <img [ngSrc]="blog.images[0]" [alt]="blog.name" priority width="800" height="450">
       </a>
     </div>
   </div>
@@ -28,10 +27,12 @@
   <h1 class="text-primary text-center text-5xl md:text-7xl mb-10 md:mb-16">Projects</h1>
 
   <div class="max-w-5xl grid grid-cols-2 gap-6 md:gap-12 mx-auto">
-    @for (project of projects; track $index) {
+    @for (project of projects; track project.link) {
       <div class="bg-white/5 grid gap-6 md:gap-8">
-        <div>
-          <img [src]="project.images[0]" [alt]="project.name">
+        <div class="bg-secondary p-4">
+          <a [href]="project.link" target="_blank">
+            <img [ngSrc]="project.images[0]" [alt]="project.name" width="800" height="450">
+          </a>
         </div>
         <div class="px-6 pb-6 md:px-8 md:pb-6">
           <h1 class="text-primary text-3xl md:text-3xl mb-2">{{ project.name }}</h1>
@@ -46,5 +47,4 @@
       </div>
     }
   </div>
-
 </section>

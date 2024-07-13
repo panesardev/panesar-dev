@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import IndexComponent from './pages/index/index.component';
+import { IndexComponent } from './pages/index/index.component';
 
 export const routes: Routes = [
   {
@@ -7,15 +7,15 @@ export const routes: Routes = [
     component: IndexComponent,
   },
   {
-    path: 'about',
-    loadComponent: () => import('./pages/about/about.component'),
+    path: 'info',
+    loadComponent: () => import('./pages/info/info.component'),
   },
   {
     path: 'projects',
     loadComponent: () => import('./pages/projects/projects.component'),
   },
   {
-    path: '',
+    path: '**',
     redirectTo: '/',
     pathMatch: 'full',
   }
