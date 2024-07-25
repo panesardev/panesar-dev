@@ -5,9 +5,12 @@
       <p class="text-lg md:text-xl mb-4">Hello, it's</p>
       <h1 class="text-4xl md:text-[3.5rem] text-primary mb-8">Sukhpreet Singh</h1>
       <p class="text-lg md:text-xl mb-8">I create high-quality web apps using Angular & Firebase</p>
-      <button class="primary mb-12" routerLink="/projects">
-        <span>See my work</span>
-        <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+      <button class="mb-12" routerLink="/projects">
+        <span class="flex justify-center items-center gap-4">
+          <p>See my work</p>
+          <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+        </span>
+        <i></i>
       </button>
       <app-links/>
     </div>
@@ -24,9 +27,12 @@
           <h1 class="text-secondary text-xl mb-2">{{ article.title }}</h1>
           <p class="text-lg mb-8">{{ article.description }}</p>
           <a class="inline-block" [href]="article.url" target="_blank">
-            <button class="primary">
-              <span>Read</span>
-              <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+            <button>
+              <span class="flex justify-center items-center gap-4">
+                <p>Read</p>
+                <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
+              </span>
+              <i></i>
             </button>
           </a>
         </div>
@@ -39,3 +45,4 @@
     }
   </div>
 </section>
+
