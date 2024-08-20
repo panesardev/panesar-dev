@@ -1,11 +1,11 @@
 <section class="mt-10">
-  <div class="grid md:grid-cols-[4fr_3fr] max-w-6xl gap-12 md:gap-20 mx-auto">
+  <div class="grid md:grid-cols-[4fr_3fr] max-w-6xl gap-12 md:gap-20 mx-auto mb-10">
 
     <div class="bg-white/5 h-fit p-6 md:p-12">
       <p class="text-lg md:text-xl mb-4">Hello, it's</p>
       <h1 class="text-4xl md:text-[3.5rem] text-primary mb-8">Sukhpreet Singh</h1>
       <p class="text-lg md:text-xl mb-8">I create high-quality web apps using Angular & Firebase</p>
-      <button class="mb-12" routerLink="/projects">
+      <button class="w-full md:w-fit mb-12" routerLink="/projects">
         <span class="flex justify-center items-center gap-4">
           <p>See my work</p>
           <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
@@ -26,8 +26,8 @@
         <div class="p-6 md:p-8">
           <h1 class="text-secondary text-xl mb-2">{{ article.title }}</h1>
           <p class="text-lg mb-8">{{ article.description }}</p>
-          <a class="inline-block" [href]="article.url" target="_blank">
-            <button>
+          <a class="" [href]="article.url" target="_blank">
+            <button class="w-full md:w-fit">
               <span class="flex justify-center items-center gap-4">
                 <p>Read</p>
                 <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/></svg>
