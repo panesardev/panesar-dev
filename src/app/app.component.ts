@@ -18,6 +18,4 @@ import { NavbarComponent } from './layout/navbar.component';
     </main>
   `,
 })
-export class AppComponent {
-
-}
+export class AppComponent {}
