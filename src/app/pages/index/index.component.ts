@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 import { FEATURED_ARTICLE_URL } from '../../app.constants';
 import { LinksComponent } from '../../layout/links.component';
 import { LoaderComponent } from '../../layout/loader.component';
-import { Article } from '../../types/article';
+import { Article } from '../../types/article.interface';
 
 @Component({
   selector: 'app-index',
