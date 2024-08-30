@@ -15,7 +15,9 @@
       <app-links/>
     </div>
 
-    <app-featured-article [article]="featuredArticle$ | async"/>
+    @defer {
+      <app-featured-article [article]="featuredArticle$ | async"/>
+    }
   </div>
 </section>
 
