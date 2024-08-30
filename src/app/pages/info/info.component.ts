@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LinksComponent } from '../../layout/links.component';
+import { LinksComponent } from '../../layout/components/links/links.component';
 
 @Component({
   selector: 'app-info',

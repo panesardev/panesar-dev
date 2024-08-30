@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LINKS } from '../app.constants';
+import { LINKS } from '../../../app.constants';
 
 @Component({
   selector: 'app-links',

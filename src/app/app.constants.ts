@@ -1,4 +1,4 @@
-import { Project } from "./types/project.interface";
+import { Project } from "./pages/projects/projects.component";
 
 export const FEATURED_ARTICLE_URL = 'https://plutonium-api.vercel.app/articles/featured';
 
