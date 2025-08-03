@@ -15,30 +15,22 @@ export const BLOG: Project = {
   description: 'Introducing a server-rendered blog platform I developed with Angular to help fellow developers learn coding techniques quickly.',
   link: 'https://plutoniumx.vercel.app',
   stack: ['angular', 'firebase', 'tailwind', 'markdown'],
-  images: ['/img/plutonium.png'],
+  image: '/img/plutonium.png',
 };
 
 export const PROJECTS: Project[] = [
   {
-    name: 'EShopStyle',
+    name: 'VintageLuxe',
     description: 'E-Commerce application with server-side rendering and cart management',
-    link: 'https://eshopstyle.vercel.app',
+    link: 'https://vintageluxe.vercel.app',
     stack: ['angular', 'firebase', 'tailwind'],
-    images: [
-      '/img/eshopstyle1.png',
-      '/img/eshopstyle2.png',
-      '/img/eshopstyle3.png',
-    ],
+    image: '/img/vintageluxe.png',
   },
   {
     name: 'Kanban board',
-    description: 'Advanced Drag & Drop Kanban board to boost your workflow & productivity',
+    description: 'Advanced Drag & Drop Kanban board for your workflow & productivity',
     link: 'https://ngx-kanban.vercel.app',
     stack: ['angular', 'firebase', 'tailwind'],
-    images: [
-      '/img/kanban1.png',
-      '/img/kanban2.png',
-      '/img/kanban3.png',
-    ],
+    image: '/img/kanban.png',
   },
 ];

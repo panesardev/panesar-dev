@@ -1,20 +1,30 @@
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FeaturedArticleComponent } from "../../layout/components/featured-article/featured-article.component";
 import { LinksComponent } from '../../layout/components/links/links.component';
+import { LoaderComponent } from '../../layout/components/loader/loader.component';
 import { DataService } from '../../services/data.service';
+
+export interface FeaturedArticle {
+  url: string;
+  title: string;
+  description: string;
+  coverUrl: string;
+  authorName: string;
+  authorLink: string;
+  authorImage: string;
+}
 
 @Component({
   selector: 'app-index',
-  standalone: true,
   imports: [
     RouterLink,
     AsyncPipe,
     LinksComponent,
-    FeaturedArticleComponent,
-],
-  templateUrl: './index.component.html',
+    NgOptimizedImage,
+    LoaderComponent,
+  ],
+  templateUrl: './index.component.html'
 })
 export class IndexComponent {
   private data = inject(DataService);

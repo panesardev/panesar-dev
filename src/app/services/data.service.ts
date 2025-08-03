@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
-import { FeaturedArticle } from "../layout/components/featured-article/featured-article.component";
 import { FEATURED_ARTICLE_URL } from "../app.constants";
+import { FeaturedArticle } from "../pages/index/index.component";
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
